@@ -11,26 +11,21 @@ const GridSection = () => {
   const t = StatsLocale[`${l}`]
   const [show, setShow] = useState(false)
   return (
-   <div className="grid md:grid-cols-3 grid-cols-2 gap-5 py-5">
+   <div className="grid md:grid-cols-3 grid-cols-2 gap-5 py-2">
       {StatsLocale[l].items.map((stats, index) => (
-          <div key={index}>
-              <div className='transition-all duration-500 ease-in-out w-full flex text-center items-center h-full flex-col rounded-lg border border-gray-100 bg-white
-              hover:border-gray-300 relative group py-10' onClick={() =>{setShow(!show)}}>
-                <div className='transition-all duration-500 ease-in-out absolute right-5 top-5 p-1 bg-gray-200 rounded-full group-hover:bg-gray-200'>
-                  <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
-                  </svg>
-                </div>
+        <div key={index}>
+              <div className='transition-all duration-500 ease-in-out w-full flex text-center items-center h-full flex-col rounded-2xl
+              hover:border-gray-300 relative group py-10 border border-gray-200' onClick={() =>{setShow(!show)}}>
             
-                <p className='font-semibold uppercase md:text-base text-xs'>
+                <p className='md:font-black font-black uppercase md:text-xl text-base text-[#26282c]'>
                     {stats.title}
                 </p>
                   <span className='text-gray-700 mt-2 scale-75 '>{stats.icon}</span>
-                  <div className={`w-12 h-1${stats.class1} `}></div>
+                  <div className={`w-12 h-1${stats.class1}`}></div>
                 {!show ?    
                 <>
-                  <p className='md:text-3xl text-lg font-black text-gray-700'><CountUp end={stats.count} /></p>
-                  <p className='font-light'>{stats.text1}</p>
+                  <p className='md:text-5xl text-3xl font-black text-[#0775ff]'><CountUp end={stats.count} /></p>
+                  <p className='font-light text-[#26282c]'>{stats.text1}</p>
                 </>
               :
               <div className='flex flex-col items-center text-center'>

@@ -5,6 +5,7 @@ const NavbarLocale = [
         driver: 'Жолооч',
         service: 'Бүтээгдэхүүн',
         about: 'Бидний тухай',
+        admin: 'Админ хэсэг',
         services: [
             {
                 title: 'EkoCab',

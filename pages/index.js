@@ -1,7 +1,6 @@
 import React from "react"
 import { Inter } from "next/font/google";
 import Head from "next/head";
-import Image from "next/image";
 //components
 import ImageSlider from "../components/Home/ImageSlider";
 import GridSection from "@/components/Home/Grid";
@@ -25,9 +24,15 @@ function Home() {
       </Head>
       <ImageSlider />
       <div className="md:px-8 px-4 bg-[#f8f8f8]">
-      <GridSection/>
         <PricingInfo />
-        <Instruction />
+        <div className="mt-5">
+        <h1 className="text-2xl lg:text-4xl font-bold">Бидний гүйцэтгэсэн ажилууд</h1>
+        <span class="text-[#959595] text-base lg:text-lg sm:mt-2">Нислэгтээ хүрэх хүртлэхээ бидэнд таатга.</span>
+      <GridSection/>
+        </div>
+        <div className="mt-5">
+          <Instruction />
+        </div>
       </div>
     </div>
   );

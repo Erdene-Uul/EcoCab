@@ -13,7 +13,7 @@ const Instruction = () => {
   }
 
   return (
-    <div className='w-full grid grid-cols-1 lg:grid-cols-2 gap-7 lg:py-20 md:px-40 px-0'>
+    <div className='w-full grid grid-cols-1 lg:grid-cols-2 gap-7 lg:py-20 md:px-40 py-5'>
       <div className='col-span-1 flex flex-col gap-7'>
         <div>
           <div className='flex flex-col'>
@@ -29,13 +29,13 @@ const Instruction = () => {
           <div key={index}>
             <div
               style={{ backgroundColor: instruction.background }}
-              className='w-full p-5 lg:p-12 rounded-xl flex flex-col gap-4 lg:gap-8'
+              className='w-full p-5 lg:p-12 rounded-3xl flex flex-col gap-4 lg:gap-8'
             >
               <div className='flex flex-col gap-3'>
-                <span className='text-xl lg:text-2xl font-semibold'>
+                <span style={{ color: instruction.text}} className='text-xl lg:text-2xl font-semibold'>
                   {instruction.title}
                 </span>
-                <span className='text-sm lg:text-base text-[#5f5f5f]'>{instruction.desc}</span>
+                <span style={{ color: instruction.text}} className='text-sm lg:text-base'>{instruction.desc}</span>
               </div>
             </div>
           </div>
@@ -49,7 +49,7 @@ const Instruction = () => {
               className='w-full p-5 lg:p-12 rounded-xl flex flex-col gap-4 lg:gap-8'
             >
               <div className='flex flex-col gap-3'>
-                <span className='text-xl lg:text-2xl font-semibold'>
+                <span  className='text-xl lg:text-2xl font-semibold'>
                   {instruction2.title}
                 </span>
                 <span className='text-sm lg:text-base text-[#5f5f5f]'>

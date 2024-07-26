@@ -1,5 +1,6 @@
 import React, { useContext, useEffect } from 'react'
 import Navbar from './Navbar'
+import Footer from './Footer';
 import SecondNavbar from './SecondNavbar'
 
 const Layout = ({ children }) => {
@@ -8,6 +9,7 @@ const Layout = ({ children }) => {
         {/* <Navbar /> */}
         <SecondNavbar />
         {children}
+        <Footer/>
         </div>
   )
 }
