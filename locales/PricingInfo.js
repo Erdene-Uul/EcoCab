@@ -2,6 +2,7 @@ import prius30 from '../Assets/prius30.png';
 import sanata8 from '../Assets/sanata8.png';
 import alphart from '../Assets/Alphart.png';
 import suzuki from '../Assets/suzuki.png';
+// import g63 from '../Assets/g63.png';
 const PricingLocale = [
     {
         negtaldaa: "Нэг талдаа",
@@ -49,6 +50,15 @@ const Pricings = [
                 price_udruur: "284,000",
                 text1: "Та манайхаас онгоцны буудал руу хүргүүлэх, онгоцны буудлаас тосуулах, гэсэн үйлчилгээ авах боломжтой."
             },
+            // {
+            //     mark: 'Land Cruiser 300',
+            //     desc: "+ Уух зүйл",
+            //     image: `${g63.src}`,
+            //     price_negtaldaa: "604,000",
+            //     price_hoyurtaldaa: "614,000",
+            //     price_udruur: "904,000",
+            //     text1: "Та манайхаас онгоцны буудал руу хүргүүлэх, онгоцны буудлаас тосуулах, гэсэн үйлчилгээ авах боломжтой."
+            // },
         ]
     }
 ]

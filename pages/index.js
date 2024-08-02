@@ -27,7 +27,7 @@ function Home() {
         <PricingInfo />
         <div className="mt-5">
         <h1 className="text-2xl lg:text-4xl font-bold">Бидний гүйцэтгэсэн ажилууд</h1>
-        <span class="text-[#959595] text-base lg:text-lg sm:mt-2">Нислэгтээ хүрэх хүртлэхээ бидэнд таатга.</span>
+        <span className="text-[#959595] text-base lg:text-lg sm:mt-1">Нислэгтээ хүрэх хүртлэхээ бидэнд таатга.</span>
       <GridSection/>
         </div>
         <div className="mt-5">

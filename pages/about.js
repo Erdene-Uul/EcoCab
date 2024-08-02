@@ -30,7 +30,7 @@ const About = () => {
             className="text-center"
           >
             <img
-              className="mx-auto rounded-2xl opacity-80 hover:opacity-100 transition-opacity duration-300 shadow-lg"
+              className="mx-auto rounded-2xl opacity-100 transition-opacity duration-300 shadow-lg"
               src={member.image}
               alt={member.name}
             />

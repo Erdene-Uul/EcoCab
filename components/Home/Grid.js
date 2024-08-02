@@ -20,7 +20,7 @@ const GridSection = () => {
                 <p className='md:font-black font-black uppercase md:text-xl text-base text-[#26282c]'>
                     {stats.title}
                 </p>
-                  <span className='text-gray-700 mt-2 scale-75 '>{stats.icon}</span>
+                  <p className='text-gray-700 mt-2 scale-75 '>{stats.icon}</p>
                   <div className={`w-12 h-1${stats.class1}`}></div>
                 {!show ?    
                 <>

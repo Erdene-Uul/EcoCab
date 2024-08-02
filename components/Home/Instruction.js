@@ -17,12 +17,12 @@ const Instruction = () => {
       <div className='col-span-1 flex flex-col gap-7'>
         <div>
           <div className='flex flex-col'>
-            <span className='text-center lg:text-start text-3xl lg:text-4xl font-bold'>
+            <p className='text-center lg:text-start text-3xl lg:text-4xl font-bold'>
               Нисэх буудал руу хүргүүлэх үү? 🚗
-            </span>
-            <span className='text-center lg:text-start text-base text-[#5f5f5f] mt-4'>
+            </p>
+            <p className='text-center lg:text-start text-base text-[#5f5f5f] mt-4'>
               Орон зай, цаг хугацаанаас үл хамааран бид нисэх онгоцны буудал хүргэх, тосох үйлчилгээг цаг алдалгүй үзүүлж байна.
-            </span>
+            </p>
           </div>
         </div>
         {t.instructions.map((instruction, index) => (
@@ -52,9 +52,9 @@ const Instruction = () => {
                 <span  className='text-xl lg:text-2xl font-semibold'>
                   {instruction2.title}
                 </span>
-                <span className='text-sm lg:text-base text-[#5f5f5f]'>
+                <p className='text-sm lg:text-base text-[#5f5f5f]'>
                   {instruction2.desc}
-                </span>
+                </p>
               </div>
             </div>
           </div>
